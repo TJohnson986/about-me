@@ -5,9 +5,9 @@
 
 //var questionOne = prompt('Do I live in WA?').toLowerCase();
 
-var guestName = prompt('Hey welcome! What is your name?');
-console.log(guestName);
-alert('Glad you\'re here ' + guestName + '!');
+// var guestName = prompt('Hey welcome! What is your name?');
+// console.log(guestName);
+// alert('Glad you\'re here ' + guestName + '!');
 
 var gameStart = prompt('Would you like to know a little more about me? A simple yes or no will do').toLowerCase();
 //console.log gameStart);
@@ -24,6 +24,14 @@ if(firstAnswer === 'yes' || firstAnswer === 'y') {
   alert('Yep, born and raised!');
 } else {
   alert('False, so much for an easy one!');
+}
+
+var secondAnswer = prompt('Do I love ice cream? 🍦').toLowerCase();
+if(secondAnswer === 'yes' || secondAnswer === 'y') {
+  console.log('Answer if I love ice cream: ' + secondAnswer);
+  alert('Yes, I very much do!');
+} else {
+  alert('You\'re crazy, who doesn\'t love ice cream?!');
 }
 
 // if(questionOne === 'yes' || questionOne === 'y'); {
