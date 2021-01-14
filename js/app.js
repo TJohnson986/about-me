@@ -50,10 +50,14 @@ if(fourthAnswer === 'yes' || fourthAnswer === 'y') {
   alert('Yes, mountains are where it\'s at ⛰️');
 } else {
   console.log('Answer if I like mountains more: ' + fourthAnswer);
-  alert('Nah, mountains are where it\'s at ⛰️');
+  alert('Beaches are nice, but mountains are where it\'s at ⛰️');
 }
 
-// if(questionOne === 'yes' || questionOne === 'y'); {
-//   console.log('You are correct!');
-// }
-
+var fifthAnswer = prompt('Have I been to Alaska?').toLowerCase();
+if(fifthAnswer === 'yes' || fifthAnswer === 'y') {
+  console.log('Answer if I have been to Alaska ' + fifthAnswer);
+  alert('Actually, no I haven\'t, but would really like to go!');
+} else {
+  console.log('Answer if I have been to Alaska ' + fifthAnswer);
+  alert('You\'re right, I haven\'t been but really want to go!');
+}
