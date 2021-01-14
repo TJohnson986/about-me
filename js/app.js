@@ -23,6 +23,7 @@ if(firstAnswer === 'yes' || firstAnswer === 'y') {
   console.log('Answer if I live in Washington: ' + firstAnswer);
   alert('Yep, born and raised!');
 } else {
+  console.log('Answer if I live in Washington: ' + firstAnswer);
   alert('False, so much for an easy one!');
 }
 
@@ -31,6 +32,7 @@ if(secondAnswer === 'yes' || secondAnswer === 'y') {
   console.log('Answer if I love ice cream: ' + secondAnswer);
   alert('Yes, I very much do!');
 } else {
+  console.log('Answer if I love ice cream: ' + secondAnswer);
   alert('You\'re crazy, who doesn\'t love ice cream?!');
 }
 
