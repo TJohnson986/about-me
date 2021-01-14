@@ -36,6 +36,15 @@ if(secondAnswer === 'yes' || secondAnswer === 'y') {
   alert('You\'re crazy, who doesn\'t love ice cream?!');
 }
 
+var thirdAnswer = prompt('Do I love camping?');
+if(thirdAnswer === 'yes' || thirdAnswer === 'y') {
+  console.log('Answer if I love camping: ' + thirdAnswer);
+  alert('Yes! It\'s my favorite.');
+} else {
+  console.log('Answer if I love camping: ' + thirdAnswer);
+  alert('You don\'t know me very well..');
+}
+
 // if(questionOne === 'yes' || questionOne === 'y'); {
 //   console.log('You are correct!');
 // }
