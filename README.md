@@ -1,15 +1,14 @@
-# LAB - Number
+# LAB - 02
 
-## Project Name
+## About Me
 
-I built an app with a direct and powerful purpose. My app does all of the things that it accomplishes well. Here  I describe the purpose and functionality so those that visit my README understand the app.
+This project is to learn and practice creating a webpage with HTML, CSS, and JavaScript.
 
 ### Author: Tyler Johnson
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* Any Links you used as reference
+* [Mountain Emoji](https://emojiterra.com/mountain/)
+
 
 ### Reflections and Comments
-* Consider including the answers to your daily journal and submission questions here
-* This is also a good place to reflect on the tools and resources used and learned
+This was a great exersize and I think I was able to complete each element correctly. It was nice to see it all come together and gain the practice.
