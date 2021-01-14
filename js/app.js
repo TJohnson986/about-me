@@ -10,7 +10,7 @@ alert('Glad you\'re here ' + guestName + '!');
 var gameStart = prompt('Would you like to know a little more about me? A simple yes or no will do').toLowerCase();
 if(gameStart === 'yes' || gameStart === 'y') {
   //console.log('Guest answer if they\'d like to start: ' + gameStart);
-  alert('Cool! Let\'s play a guessing game. Guess either yes or no to the following questions.');
+  alert('Cool! Let\'s play a guessing game. Guess using either yes or no to the following questions.');
 } else {
   alert('OK, feel free to come back later.');
 }
@@ -60,4 +60,4 @@ if(fifthAnswer === 'yes' || fifthAnswer === 'y') {
   alert('You\'re right, I haven\'t been but really want to go!');
 }
 
-alert('That\'s it! Thanks for playing ' + guestName + ' and feel free to look around');
+alert('That\'s it! Thanks for playing, ' + guestName + ' and feel free to look around');
