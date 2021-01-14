@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: aliceblue;
     border-width: 2px;
     margin: 20px;
 }
@@ -12,11 +12,16 @@ h1{
 h2{
     font-size: medium;
     font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 p{
+    background-color: rgb(145, 212, 214);
     border-color: black;
-    margin: 40px;
+    border: 4px;
+    margin: 0px;
+    padding: 10px;
 }
 
 main {
@@ -25,5 +30,14 @@ main {
 
 ul {
     list-style: disc;
+}
+
+ol {
+    list-style: lower-roman;
+}
+
+footer{
+    padding: 40px;
+    text-align: center;
 }
 
