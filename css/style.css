@@ -7,6 +7,7 @@ body {
 h1{
     font-size: large;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 h2{
@@ -20,8 +21,8 @@ p{
     background-color: rgb(145, 212, 214);
     border-color: black;
     border: 4px;
-    margin: 0px;
-    padding: 10px;
+    padding: 20px;
+   
 }
 
 main {
