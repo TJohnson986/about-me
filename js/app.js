@@ -61,9 +61,15 @@ alert('Glad you\'re here ' + guestName + '!');
 // }
 
 var correctNumber = 6;
+var guessAttempts = 3;
 var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a number between 1 & 10`);
-while (guessedNumber && !correctNumber);
-console.log('Nope, that\'s not it!');
+while (guessedNumber !== correctNumber && guessAttempts > 0){
+  console.log('Nope, that\'s not it! Try again' + guessAttempts);
+  prompt('Lets try again');
+  guessAttempts--;
+}
+
+
 
 
 alert('That\'s it! Thanks for playing, ' + guestName + ' and feel free to look around');
