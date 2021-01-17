@@ -60,25 +60,43 @@ alert('Glad you\'re here ' + guestName + '!');
 //   alert('You\'re right, I haven\'t been but really want to go!');
 // }
 
-var correctNumber = 6;
-var guessAttempts = 3;
-var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a number between 1 & 10`);
-while (guessAttempts && guessedNumber !== correctNumber) {
-  console.log(guessedNumber);
-  if (parseInt(guessedNumber) === correctNumber) {
-    //console.log('You are correct!');
-    alert ('You are correct! The number is 6'); break;
-  } else if (parseInt(guessedNumber) < correctNumber) {
-    guessedNumber = prompt(`Nope, that's not it, try a higher number! You have ${guessAttempts} attempts left`);
-    //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
-  } else if (parseInt(guessedNumber) > correctNumber) {
-    guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
+// var correctNumber = 6;
+// var guessAttempts = 3;
+// var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a number between 1 & 10`);
+// while (guessAttempts && guessedNumber !== correctNumber) {
+//   console.log(guessedNumber);
+//   if (parseInt(guessedNumber) === correctNumber) {
+//     //console.log('You are correct!');
+//     alert ('You are correct! The number is 6'); break;
+//   } else if (parseInt(guessedNumber) < correctNumber) {
+//     guessedNumber = prompt(`Nope, that's not it, try a higher number! You have ${guessAttempts} attempts left`);
+//     //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
+//   } else if (parseInt(guessedNumber) > correctNumber) {
+//     guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
+//   }
+//   guessAttempts--;
+//   if (guessAttempts === 0) {
+//     alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was 6.`);
+//   }
+// }
+
+var carColors = ['red','maroon','blue','gold','pink','silver'];
+var myCarColor = carColors[1];
+var seventhAnswer = prompt('Could you guess the color of my car?').toLowerCase();
+var carGuessAttempts = 5;
+while (carGuessAttempts || seventhAnswer !== myCarColor) {
+  console.log(seventhAnswer);
+  console.log(myCarColor);
+  if (seventhAnswer === myCarColor) {
+    console.log('You are correct!');
+    alert ('You are correct! The color of my car is maroon'); break;
+  } else if (seventhAnswer !== myCarColor) {
+    seventhAnswer = prompt(`Nope, that's not it, try a different color! You have ${carGuessAttempts} attempts left`).toLowerCase();
   }
-  guessAttempts--;
-  if (guessAttempts === 0) {
-    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was 6.`);
+  carGuessAttempts--;
+  if (carGuessAttempts === 0) {
+    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was maroon.`);
   }
 }
-
 
 alert('That\'s it! Thanks for playing, ' + guestName + ' and feel free to look around');
