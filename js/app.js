@@ -124,5 +124,9 @@ if (parseInt(guessedNumber) === correctNumber) {
   score = (score + 1);
   console.log(score);
 }
+if (seventhAnswer === myCarColor) {
+  score = (score + 1);
+  console.log(score);
+}
 
 alert(`That's it! Thanks for playing, ${guestName}! You got ${score} out of 7 questions correct. Feel free to look around the rest of my page.`);
