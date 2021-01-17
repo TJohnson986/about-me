@@ -104,5 +104,8 @@ if (firstAnswer === 'yes' || firstAnswer === 'y') {
   score = (score + 1);
   console.log(score);
 }
-if ()
-alert('That\'s it! Thanks for playing, ' + guestName + ' and feel free to look around');
+if (secondAnswer === 'yes' || secondAnswer === 'y'){
+  score = (score + 1);
+  console.log(score);
+}
+alert(`That's it! Thanks for playing, ${guestName}! You got ${score} out of 7 questions correct. Feel free to look around the rest of my page.`);
