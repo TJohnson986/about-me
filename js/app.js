@@ -69,15 +69,15 @@ while (guessAttempts && guessedNumber !== correctNumber) {
     //console.log('You are correct!');
     alert ('You are correct! The number is 6'); break;
   } else if (parseInt(guessedNumber) < correctNumber) {
-    guessedNumber = prompt('Nope, that\'s not it, try a higher number!');
+    guessedNumber = prompt(`Nope, that's not it, try a higher number! You have ${guessAttempts} attempts left`);
     //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
   } else if (parseInt(guessedNumber) > correctNumber) {
-    guessedNumber = prompt('Nope, that\'s not it, try a lower number!');
-  // } else if (guessAttempts < 0); {
-  //   prompt('Bummer, you ran out of attempts. The correct answer is 6.');
+    guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
   }
   guessAttempts--;
-  prompt ('bummer');
+  if (guessAttempts === 0) {
+    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was 6.`);
+  }
 }
 
 
