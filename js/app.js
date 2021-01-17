@@ -33,79 +33,92 @@ if(secondAnswer === 'yes' || secondAnswer === 'y') {
   alert('You\'re crazy, who doesn\'t love ice cream?!');
 }
 
-// var thirdAnswer = prompt('Do I love camping?').toLowerCase();
-// if(thirdAnswer === 'yes' || thirdAnswer === 'y') {
-//   //console.log('Answer if I love camping: ' + thirdAnswer);
-//   alert('Yes! It\'s my favorite.');
-// } else {
-//   //console.log('Answer if I love camping: ' + thirdAnswer);
-//   alert('You don\'t know me very well..');
-// }
+var thirdAnswer = prompt('Do I love camping?').toLowerCase();
+if(thirdAnswer === 'yes' || thirdAnswer === 'y') {
+  //console.log('Answer if I love camping: ' + thirdAnswer);
+  alert('Yes! It\'s my favorite.');
+} else {
+  //console.log('Answer if I love camping: ' + thirdAnswer);
+  alert('You don\'t know me very well..');
+}
 
-// var fourthAnswer = prompt('Do I like mountains more than beaches?').toLowerCase();
-// if(fourthAnswer === 'yes' || fourthAnswer === 'y') {
-//   //console.log('Answer if I like mountains more: ' + fourthAnswer);
-//   alert('Yes, mountains are where it\'s at ⛰️');
-// } else {
-//   //console.log('Answer if I like mountains more: ' + fourthAnswer);
-//   alert('Beaches are nice, but mountains are where it\'s at ⛰️');
-// }
+var fourthAnswer = prompt('Do I like mountains more than beaches?').toLowerCase();
+if(fourthAnswer === 'yes' || fourthAnswer === 'y') {
+  //console.log('Answer if I like mountains more: ' + fourthAnswer);
+  alert('Yes, mountains are where it\'s at ⛰️');
+} else {
+  //console.log('Answer if I like mountains more: ' + fourthAnswer);
+  alert('Beaches are nice, but mountains are where it\'s at ⛰️');
+}
 
-// var fifthAnswer = prompt('Have I been to Alaska?').toLowerCase();
-// if(fifthAnswer === 'yes' || fifthAnswer === 'y') {
-//   //console.log('Answer if I have been to Alaska ' + fifthAnswer);
-//   alert('Actually, no I haven\'t, but would really like to go!');
-// } else {
-//   //console.log('Answer if I have been to Alaska ' + fifthAnswer);
-//   alert('You\'re right, I haven\'t been but really want to go!');
-// }
+var fifthAnswer = prompt('Have I been to Alaska?').toLowerCase();
+if(fifthAnswer === 'yes' || fifthAnswer === 'y') {
+  //console.log('Answer if I have been to Alaska ' + fifthAnswer);
+  alert('Actually, no I haven\'t, but would really like to go!');
+} else {
+  //console.log('Answer if I have been to Alaska ' + fifthAnswer);
+  alert('You\'re right, I haven\'t been but really want to go!');
+}
 
-// var correctNumber = 6;
-// var guessAttempts = 3;
-// var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a number between 1 & 10`);
-// while (guessAttempts && guessedNumber !== correctNumber) {
-//   console.log(guessedNumber);
-//   if (parseInt(guessedNumber) === correctNumber) {
-//     //console.log('You are correct!');
-//     alert ('You are correct! The number is 6'); break;
-//   } else if (parseInt(guessedNumber) < correctNumber) {
-//     guessedNumber = prompt(`Nope, that's not it, try a higher number! You have ${guessAttempts} attempts left`);
-//     //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
-//   } else if (parseInt(guessedNumber) > correctNumber) {
-//     guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
-//   }
-//   guessAttempts--;
-//   if (guessAttempts === 0) {
-//     alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was 6.`);
-//   }
-// }
+var correctNumber = 6;
+var guessAttempts = 3;
+var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a number between 1 & 10`);
+while (guessAttempts && guessedNumber !== correctNumber) {
+  console.log(guessedNumber);
+  if (parseInt(guessedNumber) === correctNumber) {
+    //console.log('You are correct!');
+    alert ('You are correct! The number is 6'); break;
+  } else if (parseInt(guessedNumber) < correctNumber) {
+    guessedNumber = prompt(`Nope, that's not it, try a higher number! You have ${guessAttempts} attempts left`);
+    //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
+  } else if (parseInt(guessedNumber) > correctNumber) {
+    guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
+  }
+  guessAttempts--;
+  if (guessAttempts === 0) {
+    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was 6.`);
+  }
+}
 
-// var carColors = ['red',' ' + 'maroon',' ' + 'blue',' ' + 'gold',' ' + 'pink',' ' + 'silver'];
-// var myCarColor = carColors[1];
-// var seventhAnswer = prompt('Could you guess the color of my car?').toLowerCase();
-// var carGuessAttempts = 5;
-// while (carGuessAttempts || seventhAnswer !== myCarColor) {
-//   console.log(seventhAnswer);
-//   console.log(myCarColor);
-//   if (seventhAnswer === myCarColor) {
-//     console.log('You are correct!');
-//     alert ('You are correct! The color of my car is maroon'); break;
-//   } else if (seventhAnswer !== myCarColor) {
-//     seventhAnswer = prompt(`Nope, that's not it, try a different color! You have ${carGuessAttempts} attempts left`).toLowerCase();
-//   }
-//   carGuessAttempts--;
-//   if (carGuessAttempts === 0) {
-//     alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was maroon. The choices I had were ${carColors}.`); break;
-//   }
-// }
+var carColors = ['red','maroon','blue','gold','pink','silver'];
+var myCarColor = carColors[1];
+var seventhAnswer = prompt('Could you guess the color of my car?').toLowerCase();
+var carGuessAttempts = 5;
+while (carGuessAttempts || seventhAnswer !== myCarColor) {
+  console.log(seventhAnswer);
+  console.log(myCarColor);
+  if (seventhAnswer === myCarColor) {
+    console.log('You are correct!');
+    alert ('You are correct! The color of my car is maroon'); break;
+  } else if (seventhAnswer !== myCarColor) {
+    seventhAnswer = prompt(`Nope, that's not it, try a different color! You have ${carGuessAttempts} attempts left`).toLowerCase();
+  }
+  carGuessAttempts--;
+  if (carGuessAttempts === 0) {
+    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was maroon. The choices I had were ${carColors}.`); break;
+  }
+}
 
 var score = 0;
 if (firstAnswer === 'yes' || firstAnswer === 'y') {
   score = (score + 1);
   console.log(score);
 }
-if (secondAnswer === 'yes' || secondAnswer === 'y'){
+if (secondAnswer === 'yes' || secondAnswer === 'y') {
   score = (score + 1);
   console.log(score);
 }
+if (thirdAnswer === 'yes' || thirdAnswer === 'y') {
+  score = (score + 1);
+  console.log(score);
+}
+if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
+  score = (score + 1);
+  console.log(score);
+}
+if (fifthAnswer === 'yes' || fifthAnswer === 'y') {
+  score = (score + 1);
+  console.log(score);
+}
+
 alert(`That's it! Thanks for playing, ${guestName}! You got ${score} out of 7 questions correct. Feel free to look around the rest of my page.`);
