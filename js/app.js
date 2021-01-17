@@ -66,11 +66,9 @@ var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a n
 while (guessAttempts && guessedNumber !== correctNumber) {
   console.log(guessedNumber);
   if (parseInt(guessedNumber) === correctNumber) {
-    //console.log('You are correct!');
     alert ('You are correct! The number is 6'); break;
   } else if (parseInt(guessedNumber) < correctNumber) {
     guessedNumber = prompt(`Nope, that's not it, try a higher number! You have ${guessAttempts} attempts left`);
-    //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
   } else if (parseInt(guessedNumber) > correctNumber) {
     guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
   }
@@ -86,7 +84,7 @@ var seventhAnswer = prompt('Could you guess the color of my car?').toLowerCase()
 var carGuessAttempts = 5;
 while (carGuessAttempts || seventhAnswer !== myCarColor) {
   console.log(seventhAnswer);
-  console.log(myCarColor);
+  //console.log(myCarColor);
   if (seventhAnswer === myCarColor) {
     console.log('You are correct!');
     alert ('You are correct! The color of my car is maroon'); break;
