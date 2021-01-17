@@ -80,7 +80,7 @@ alert('Glad you\'re here ' + guestName + '!');
 //   }
 // }
 
-var carColors = ['red','maroon','blue','gold','pink','silver'];
+var carColors = ['red',' ' + 'maroon',' ' + 'blue',' ' + 'gold',' ' + 'pink',' ' + 'silver'];
 var myCarColor = carColors[1];
 var seventhAnswer = prompt('Could you guess the color of my car?').toLowerCase();
 var carGuessAttempts = 5;
@@ -95,8 +95,10 @@ while (carGuessAttempts || seventhAnswer !== myCarColor) {
   }
   carGuessAttempts--;
   if (carGuessAttempts === 0) {
-    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was maroon.`);
+    alert(`Bummer ${guestName}, you ran out of attempts. The correct answer was maroon. The choices I had were ${carColors}.`); break;
   }
 }
 
+var score = 0;
+if ()
 alert('That\'s it! Thanks for playing, ' + guestName + ' and feel free to look around');
