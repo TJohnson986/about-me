@@ -116,7 +116,11 @@ if (fourthAnswer === 'yes' || fourthAnswer === 'y') {
   score = (score + 1);
   console.log(score);
 }
-if (fifthAnswer === 'yes' || fifthAnswer === 'y') {
+if (fifthAnswer === 'no' || fifthAnswer === 'n') {
+  score = (score + 1);
+  console.log(score);
+}
+if (parseInt(guessedNumber) === correctNumber) {
   score = (score + 1);
   console.log(score);
 }
