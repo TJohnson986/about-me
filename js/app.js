@@ -61,18 +61,23 @@ alert('Glad you\'re here ' + guestName + '!');
 // }
 
 var correctNumber = 6;
-var guessAttempts = 4;
+var guessAttempts = 3;
 var guessedNumber = prompt (`OK ${guestName}, let's try something new. Guess a number between 1 & 10`);
 while (guessAttempts && guessedNumber !== correctNumber) {
   console.log(guessedNumber);
   if (parseInt(guessedNumber) === correctNumber) {
-    console.log('You are correct!');
-    alert ('You are correct!'); break;
-  } else {
-    console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
-    guessedNumber = prompt('Lets try again');
+    //console.log('You are correct!');
+    alert ('You are correct! The number is 6'); break;
+  } else if (parseInt(guessedNumber) < correctNumber) {
+    guessedNumber = prompt('Nope, that\'s not it, try a higher number!');
+    //console.log('Nope, that\'s not it! Try again ' + guessAttempts + ' ' + guessedNumber);
+  } else if (parseInt(guessedNumber) > correctNumber) {
+    guessedNumber = prompt('Nope, that\'s not it, try a lower number!');
+  // } else if (guessAttempts < 0); {
+  //   prompt('Bummer, you ran out of attempts. The correct answer is 6.');
   }
   guessAttempts--;
+  prompt ('bummer');
 }
 
 
