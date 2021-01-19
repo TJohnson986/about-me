@@ -73,7 +73,7 @@ while (guessAttempts && guessedNumber !== correctNumber) {
   } else if (parseInt(guessedNumber) > correctNumber) {
     guessedNumber = prompt(`Nope, that's not it, try a lower number! You have ${guessAttempts} attempts left`);
   } else {
-    alert('Please use only a number between 1 & 10');
+    guessedNumber = prompt('Please use only a number between 1 & 10');
   }
   guessAttempts--;
   if (guessAttempts === 0) {
